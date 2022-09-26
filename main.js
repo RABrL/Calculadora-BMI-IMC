@@ -8,7 +8,7 @@ const screenPesoIdeal = $('.peso-ideal')
 
 let imc,pesoIdealMayor,pesoIdealMenor
 
-btnCalcular.addEventListener('click', ()=>calculadora(peso.value,altura.value))
+btnCalcular.addEventListener('click', ()=>(!peso.value || !altura.value)?alert('ingrese valores'):calculadora(peso.value,altura.value))
 btnReiniciar.addEventListener('click', reiniciar)
 
 function reiniciar(){
